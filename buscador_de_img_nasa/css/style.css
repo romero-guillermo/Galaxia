@@ -1,3 +1,45 @@
 main {
     min-height: calc(100vh - 160px);
   }
+
+  /* Estilo para el contenedor de resultados */
+#contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espacio entre elementos */
+  justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+/* Estilo para cada elemento de información de la imagen */
+.image-info {
+  width: calc(33.33% - 20px); /* Tamaño del elemento en columnas (ajusta según tu diseño) */
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+/* Estilo para la imagen */
+.image-info img {
+  width: calc(100% - 5px);
+  max-width: 500px;
+  height: 500px;
+}
+
+/* Estilo para el título */
+.image-info h2 {
+  font-size: 16px; /* Tamaño de fuente para el título */
+  margin: 20px 0;
+}
+
+/* Estilo para la descripción */
+.image-info p {
+  font-size: 14px; /* Tamaño de fuente para la descripción */
+  margin: 5px 0;
+}
+
+/* Estilo para la fecha */
+.image-info .date {
+  font-size: 12px; /* Tamaño de fuente para la fecha */
+  color: #888;
+}
